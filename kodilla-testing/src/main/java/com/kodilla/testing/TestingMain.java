@@ -19,9 +19,17 @@ public class TestingMain {
 
         Calculator calculator = new Calculator();
         int resultAdd = calculator.add(7464, 424);
-        System.out.println(resultAdd);
+        if (resultAdd == resultAdd) {
+            System.out.println("Test OK!");
+        }else{
+            System.out.println("Error");
+        }
 
         int resultSubtrack = calculator.subtract(756,23);
-        System.out.println(resultSubtrack);
+        if (resultSubtrack == resultSubtrack) {
+            System.out.println("Test OK!");
+        }else{
+            System.out.println("Error");
+        }
     }
 }
