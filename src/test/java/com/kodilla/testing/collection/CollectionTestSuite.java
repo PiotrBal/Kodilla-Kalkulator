@@ -1,28 +1,16 @@
 package com.kodilla.testing.collection;
 import java.util.ArrayList;
-import java.util.Random;
 
-public class CollectionTestSuite
-{
-    public static void main(String[] args){
-        Random random = new Random();
-        ArrayList<Integer> emptyList = new ArrayList<Integer>();
-        for(int n=0; n<100; n++){
+public class CollectionTestSuite {
+    public static void main(String[] args) {
 
+        public static Integer testOddNumbersExterminatorEmptyList() {
+            ArrayList<Integer> emptyList = emptyList.EMPTY_empty;
+            Integer emptyList = emptyList.exterminate();
         }
-
-    }
-
-    public static Integer testOddNumbersExterminatorEmptyList() {
-        Integer empty;
-        for(int n=0; n<0; n++){
-            empty = null;
+        public static Integer testOddNumbersExterminatorNormalList() {
+            ArrayList<Integer> normalList = new ArrayList<Integer>();
+            Integer normalList = normalList.exterminate();
         }
-        return empty;
-    }
-
-
-    public static Integer testOddNumbersExterminatorNormalList() {
-
     }
 }
