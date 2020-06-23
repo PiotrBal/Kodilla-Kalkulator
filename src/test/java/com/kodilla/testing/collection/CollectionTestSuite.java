@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
+import java.util.Random;
 
 public class CollectionTestSuite {
     @Before
@@ -20,7 +20,7 @@ public class CollectionTestSuite {
     @Test
     public void testOddNumbersExterminatorEmptyList() {
         //Given
-        List<Object> emptyList = Collections.emptyList();
+        ArrayList<Object> emptyList = Collections.emptyList();
         OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
         //When
         ArrayList<Integer> result = oddNumbersExterminator.exterminate(emptyList);
@@ -32,7 +32,9 @@ public class CollectionTestSuite {
     public void testOddNumbersExterminatorNormalList() {
         //Given
         ArrayList<Integer> normalList = new ArrayList<>();
+        Random random = new Random();
         for(int n=0; n>50; n++) {
+            normalList.add(random.nextInt(51));
             OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
             //When
             ArrayList<Integer> result = oddNumbersExterminator.exterminate(normalList);
